@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="theProj">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Climbing Scoreboard</title>
+ 
+  <!-- Google Font - Open Sans -->
+  <link async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <!-- Bootstrap CDN 3.3.7 -->
+  <link rel="stylesheet" async href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Angular CDN 1.6.5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <!-- Angular UI Router CDN 0.4.2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+  
+  <div ui-view>
+
+  </div>
+
+
+
+<!-- modules first -->
+<script type="text/javascript" src="./app.js"></script>
+
+<!-- services second -->
+<script type="text/javascript" src="./services/userService.js"></script>
+
+
+<!-- controlers  -->
+<script type="text/javascript" src="./controller/userController.js"></script>
+
+<script type="text/javascript" src="./controller/dashboardController.js"></script>
+<script type="text/javascript" src="./controller/navController.js"></script>
+<script type="text/javascript" src="./components/navbar/navbar.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+</body>
+</html>

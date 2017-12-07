@@ -1,0 +1,69 @@
+<div class="signUpForm">
+  <h1 class="signUpHeader">Sign Up</h1>
+  <div class="form-group">
+
+    <div class="container formContainer">
+      <div class="col-md-6">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" ng-model="firstName">
+        <p class="userFormRequired" ng-hide="firstNameRequired">Required!</p>
+      </div>
+
+      <div class="col-md-6">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" ng-model="lastName">
+        <p class="userFormRequired" ng-hide="lastNameRequired">Required!</p>
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <div class="col-md-6">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" ng-model="age">
+        <p class="userFormRequired" ng-hide="DOBRequired">Required!</p>
+      </div>
+
+      <div class="col-md-2">
+        <label for="email">email address</label>
+        <input type="text" class="form-control" ng-model="email">
+        <p class="userFormRequired" ng-hide="emailRequired">Required!</p>
+      </div>
+
+      <div class="col-md-2">
+        <label for="password">Create a Password</label>
+        <input type="text" class="form-control" ng-model="password">
+        <p class="userFormRequired" ng-hide="passwordRequired">Required!</p>
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <div class="col-md-6">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" ng-model="location">
+        <p class="userFormRequired" ng-hide="locationRequired">Required!</p>
+      </div>
+
+      <div class="col-md-6">
+        <label for="years">Climbing Since</label>
+        <input type="text" class="form-control" ng-model="year">
+        <p class="userFormRequired" ng-hide="yearRequired">Required!</p>
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <div class="col-md-8">
+        <label for="bio">Bio</label>
+        <textarea name="textarea" class="bio form-control" cols="30" rows="6" ng-model="bio"></textarea>
+        <p class="userFormRequired" ng-hide="bioRequired">Required!</p>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- end form -->
+  <div class="submitDiv container">
+    <button class="btn btn-primary pull-right" ng-click="newUserSubmit()" >Submit</button>
+
+  </div>
+
+</div>

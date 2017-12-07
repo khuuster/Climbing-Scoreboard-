@@ -1,0 +1,14 @@
+
+
+<div class="container navContainer">
+  <nav class="navbar navbar-light bg-faded narbar"> 
+    <img class="logo"src="./images/logo.jpg">
+    <form class="form-inline">
+    
+      <button ng-show="userService.getCurrentUser()" ng-show="userService.getCurrentUser()" type="button" ng-click="logOut()" class="navbar-right btn btn-outline-success navButtons">Log Out</button>
+      <button ng-show="userService.getCurrentUser()" ng-click="dashboardClick()" class="navbar-right btn btn-outline-success navButtons"
+        type="button">User Dashboard</button>
+       <button ui-sref="app.users" class="navbar-right btn btn-outline-success navButtons center" type="button">World Ranking</button><button ui-sref="app.home" class="navbar-right btn btn-outline-success navButtons center" type="button">Home</button>
+    </form>
+  </nav>
+</div>

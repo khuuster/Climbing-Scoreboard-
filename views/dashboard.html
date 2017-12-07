@@ -1,0 +1,46 @@
+<div class="userHeading container">
+  <h3 class="userTitle">Climber Stats</h3>
+</div>
+
+<div class="container detail">
+  <h4 class="climberName">{{user.firstName + " " + user.lastName + " " + user.age}}</h4>
+  <h5 class="climberName">{{user.location }}</h5>
+  <h6 class="climberName">{{user.bio}}</h6>
+
+  <div class="container ">
+    <button class="btn btn-default pull-left btn-sm" ng-click="editUserButton()">Edit</button>
+  </div>
+</div>
+
+<div class="container routeListTable">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="" scope="col">Name</th>
+        <th class="" scope="col">Location</th>
+        <th class="" scope="col">Rating</th>
+        <th class="" scope="col">Points</th>
+        <th></th>
+        
+      </tr>
+    </thead>
+    <tbody class="routeBody table-striped">
+      <tr ng-repeat="route in routes">
+        <td class="userRoutes">{{route.name}}</td>  
+        <td class="userRoutes">{{route.location}}</td>
+        <td class="userRoutes">{{route.rating}}</td>
+        <td class="userRoutes">{{route.points}}</td>
+        
+        <td><button class="btn btn-primary pull-right btn-sm" ng-click="editRouteButton(route.name)">Edit</button>
+          <button class="btn btn-danger pull-right btn-sm" ng-click="deleteRouteButton(route)">Delete</button>
+        </td>  
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container addButtonContainer">
+
+  <button class="btn btn-success btn-sm edit-btn pull-right" ng-click="addRouteForm()">Add Route</button>
+
+</div>

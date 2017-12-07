@@ -1,0 +1,29 @@
+<div class="usersHeading">
+  <h1 class="userHeading">Climbing Score Board</h1>
+</div>
+
+<div class="tableDiv container">
+  <table class="userTable table table-sm">
+  <thead>
+    <tr class="listHeading">
+      <th class="headingRow col-md-1">Ranking</th>
+      <th class="headingRow col-md-2">Name</th>
+      <th class="headingRow col-md-2">Location</th>
+      <th class="headingRow col-md-2">Age</th>
+      <th class="headingRow col-md-2">Points</th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- stateParam ID is set upon click -->
+    <tr class="listRows" ng-repeat="user in users | orderBy:'-points()'" ui-sref="app.user({id: user.id })">
+      <th class="userRow col-md-1">{{$index + 1}}</th>
+      <th class="userRow col-md-2">{{user.firstName +" " +user.lastName}}</th>
+      <th class="userRow col-md-2">{{user.location}}</th>
+      <th class="userRow col-md-2">{{user.age}}</th>
+      <th class="userRow col-md-2">{{user.points()}}</th>
+    </tr>
+  </tbody>
+  </table>
+</div>

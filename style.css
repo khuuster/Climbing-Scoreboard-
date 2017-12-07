@@ -1,0 +1,170 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+}
+
+.navBar{
+  margin: 0 auto;
+}
+
+.headingTitle{
+  text-align: center;
+}
+
+.homePage {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login{
+  display: inline;
+}
+
+.signup{
+  display:inline;
+}
+
+/* user heading for ranking page */
+.userHeading{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* entire table */
+.userTable{
+text-align: center;
+margin: 20px;
+}
+
+/* heading for each column */
+.listHeading{
+  text-align: center;
+}
+
+/* containing div for table */
+.tableDiv{
+  margin: 0 auto;
+}
+
+.dashboardButton{
+  float: right;
+}
+
+.buttonContainer{
+  margin-top: 30px;
+  left: 42%;
+}
+
+.formContainer{
+  margin-top:20px;
+}
+
+.signUpHeader{
+  text-align: center;
+  padding: 30px;
+}
+
+.bio{
+  overflow:hidden;
+}
+
+.signUpForm{
+  margin: 40px;
+}
+
+.loginDiv div{
+  margin-left: 35%;
+  width: auto;
+  margin-top: 13px;
+}
+
+.password div{
+  margin-left: 90px;
+   
+}
+
+.userFormRequired{
+  color: red;
+}
+
+.listRows:hover{
+  background-color: lightgray;
+}
+
+.userTitle{
+  text-align: center;
+}
+
+.detail{
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 35px;
+  width: 500px;
+  height: 150px;
+}
+
+.climberName{
+  margin-left: 50px;
+}
+
+.routeListTable{
+  margin-top: 20px;
+}
+
+.userRoutes{
+  font-weight: normal;
+}
+
+.edit-btn{
+  margin-top: 20px;
+}
+ 
+.addButtonContainer{
+  margin-bottom: 30px;
+}
+
+.routeBody{
+  border-bottom: 2px lightgray solid; 
+}
+
+.loginIncorrect{
+  display: inline;
+  color: red;
+}
+
+.narbar {
+  background-color:white;
+}
+
+.navButtons {
+  color: #7c8ba3;
+  background-color: white;
+  margin-top: 5px;
+  margin-right: auto;
+}
+.projectImg {
+  margin-top:10px;
+  margin-left: 10px;
+  width:10%;
+  height:auto;
+}
+
+.navContainer{
+padding: 0;
+margin:0;
+width: auto;
+}
+
+body{
+  background-image: url("./images/climber.jpg");
+  height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.logo{
+  width: 137px;
+  margin-bottom: -45px;
+}

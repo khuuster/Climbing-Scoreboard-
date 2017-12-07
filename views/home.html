@@ -1,0 +1,28 @@
+<div class="header container ">
+  <h1 class="headingTitle">The Climbing Scoreboard</h1>
+</div>
+
+<div class="paragraph">
+  <p class="homePage">Welcome to The Climbing Scoreboard, log your routes and check them off. Find out where you are placed amongst other climbers from around
+    the world. </p>
+</div>
+
+<div class="loginDiv container">
+  <div class="container">
+    <label for="">Email address</label>
+    <input type="text" class="form-group" ng-model="emailLogin">
+    <p class="loginIncorrect" ng-hide="loginIncorrect">Login Incorrect</p>
+  </div>
+  
+  
+<div class="container password">
+   <label for="">Password </label>
+  <input type="password" class="form-group" ng-model="passwordLogin">
+</div>
+</div>
+
+<div class="buttonContainer container col-md-2">
+  <button class=" btn btn-primary login" ng-click="login()">Login</button>
+
+  <button class=" btn btn-danger signup" ui-sref="app.signUp">Sign Up</button>
+</div>

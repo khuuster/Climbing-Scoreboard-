@@ -1,0 +1,69 @@
+<div class="signUpForm">
+  <h1 class="signUpHeader">Edit your profile</h1>
+  <div class="form-group">
+
+    <div class="container formContainer">
+      <div class="col-md-6">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" ng-model="user.firstName">
+
+      </div>
+
+      <div class="col-md-6">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" ng-model="user.lastName">
+
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <div class="col-md-6">
+        <label for="age">Year of birth</label>
+        <input type="text" class="form-control" ng-model="user.age">
+
+      </div>
+
+      <div class="col-md-2">
+        <label for="email">email address</label>
+        <input type="text" class="form-control" ng-model="user.email">
+
+      </div>
+
+      <div class="col-md-2">
+        <label for="password">Create a Password</label>
+        <input type="text" class="form-control" ng-model="user.password">
+
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <div class="col-md-6">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" ng-model="user.location">
+
+      </div>
+
+      <div class="col-md-6">
+        <label for="year">Climbing Since</label>
+        <input type="text" class="form-control" ng-model="user.yearsClimbing">
+
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <div class="col-md-8">
+        <label for="bio">Bio</label>
+        <textarea name="textarea" class="bio form-control" cols="30" rows="6" ng-model="user.bio"></textarea>
+
+      </div>
+    </div>
+
+
+  </div>
+  <!-- end form -->
+  <div class="submitDiv container">
+  
+    <button class="btn btn-primary pull-right" ng-click="updateSubmitUser()">Update</button>
+  </div>
+
+</div>
